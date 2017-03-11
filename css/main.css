@@ -1,0 +1,275 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.sliderback1 {
+  background: linear-gradient(rgba(30,71,152,0.7),rgba(30,71,152,0.7)), url(../img/slider_bg1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.sliderback2 {
+  background: linear-gradient(rgba(30,71,152,0.7),rgba(30,71,152,0.7)), url(../img/slider_bg2.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.slider {
+  text-align: left;
+  margin-left: 35%;
+  width:30%;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+
+.slider h1 {
+  font-size: 70px;
+  font-family: serif;
+  padding: 2em 0em 0em 0em;
+}
+
+.slider p {
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 2.5em 0em;
+}
+
+.slider a {
+  border: 1px solid white;
+  font-size: 10px;
+  color: white;
+  padding: 1em;
+  box-shadow: 0em 0.2em white;
+}
+
+.slider a:hover {
+  color: orange;
+  border: 1px solid orange;
+  font-size: 12px;
+  box-shadow: 0em 0.2em orange;
+}
+
+#active {
+  background-color: white;
+  color: orange;
+}
+
+#logotop {
+  display: inline-block;
+  margin-left: 45%;
+  margin-top: -60px;
+  width: 10%;
+  background-color: white;
+  padding: 1em;
+  border-radius: 100%;
+}
+
+#topnavbar {
+  height:10px;
+  background-color: white;
+  border: 0px;
+}
+
+.navlinks {
+  margin: 0em 2em;
+}
+
+/*SEARCH*/
+
+.search-form .form-group {
+  float: right !important;
+  transition: all 0.35s, border-radius 0s;
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group:hover,
+.search-form .form-group.hover {
+  width: 100%;
+  border-radius: 4px 25px 25px 4px;
+}
+.search-form .form-group span.form-control-feedback {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #3596e0;
+  left: initial;
+  font-size: 14px;
+}
+/*SEARCH END*/
+
+/*CENTER*/
+#center {
+  height: 700px;
+  background-color: white;
+}
+
+#txtcenter1 {
+  height: 400px;
+}
+
+#txtcenter2,
+#txtcenter3 {
+  height: 300px;
+}
+
+#center h2 {
+  text-transform: uppercase;
+  padding: 1em 30px;
+}
+
+#center p {
+  padding: 0px 30px;
+  margin-bottom: 20px;
+}
+
+#center a {
+  background-color: orange;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em;
+  border-radius: 1px;
+  margin-left: 30px;
+}
+
+#center a:hover {
+  background-color: #1a3689;
+}
+
+#photo1 {
+  height: 400px;
+  background: url(../img/photo1.jpg);
+  background-size: cover;
+}
+
+#photo2 {
+  height: 300px;
+  background-image: url(../img/photo2.jpg);
+  background-size: cover;
+}
+
+#photo3 {
+  height: 300px;
+  background-image: url(../img/photo3.jpg);
+  background-size: cover;
+}
+/*CENTER END*/
+
+/*FOOTER*/
+#footer {
+  padding: 1em 0em 0em 0em;
+}
+
+#footer,
+#footer a {
+  background-color: #1a3689;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#footer a:hover {
+  color: orange;
+}
+
+/*FOOTER END*/
+
+/*MEDIA QUERIES*/
+@media all and (min-width:767px) and (max-width:940px) {
+  #logotop {
+    margin-top: -25px;
+  }
+}
+
+@media all and (min-width:767px) and (max-width:1200px) {
+  .push {
+    height: 300px;
+  }
+}
+
+@media all and (max-width:767px) {
+  .navlinks {
+    background-color: white;
+  }
+
+  .push {
+    height: 900px;
+  }
+
+  #logotop {
+    width: 15%;
+    margin-left: 42.5%;
+  }
+
+  #center {
+    height: 900px;
+  }
+
+  #txtcenter1,
+  #txtcenter2,
+  #txtcenter3,
+  #photo1,
+  #photo2,
+  #photo3 {
+    height: 300px;
+  }
+}
+
+@media all and (max-width:500px) {
+  #logotop {
+    width: 20%;
+    margin-left: 40%;
+  }
+
+  #center {
+    height: 750px;
+  }
+
+  #txtcenter1,
+  #txtcenter2,
+  #txtcenter3,
+  #photo1,
+  #photo2,
+  #photo3 {
+    height: 250px;
+  }
+}
+/*MEDIA QUERIES END*/

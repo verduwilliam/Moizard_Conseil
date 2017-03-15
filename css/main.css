@@ -191,10 +191,157 @@ a:hover {
   background-image: url(../img/photo3.jpg);
   background-size: cover;
 }
+
+.hrblue {
+  width: 30px;
+  border-top: 2px solid blue;
+}
+
+.hrwhite {
+  width: 30px;
+  border-top: 2px solid white;
+}
+
+.titreorange {
+  width: 100%;
+  background-color: orange;
+}
+
+.titreorange h1 {
+  padding: 2em 0em 0.5em 2em;
+  color: white;
+  text-transform: uppercase;
+}
+
+.titreorange p {
+  padding: 2em 0em 2em 2em;
+  color: white;
+}
+
+#titrecontact {
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+#trianglepres {
+  float: right;
+  width: 50px;
+  margin-top: -25px;
+  margin-right: 50px;
+}
+
+#trianglecontact {
+  float: left;
+  width: 50px;
+  margin-top: -25px;
+  margin-left: 50px;
+}
+
+#pres {
+  margin: 2em 3em 0em 3em;
+}
+
+#pres figure {
+  width: 419px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#pres figcaption {
+  text-align: center;
+  color: white;
+  background-color: blue;
+}
+
+.h2pres {
+  text-transform: uppercase;
+  color: blue;
+  text-align: center;
+}
+
+.logoprest {
+  width: 50px;
+}
+
+#h2prest {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  color: blue;
+}
+
+#centerprest {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.petit {
+  font-size: 80%;
+}
+
+#centertem {
+  background-color: blue;
+  padding: 100px 0px 50px 0px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.tem1 {
+  float: left;
+  width: 40px;
+}
+
+.tem2 {
+  float: right;
+  width: 40px;
+}
+
+#h2tem {
+  color: blue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#txtcontact {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#map {
+  width: 70%;
+  margin-left: 15%;
+}
+
+#coordonées {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+#coordonées,
+#coordonées a {
+  color: black;
+}
+
+#coordonées a:hover {
+  color: orange;
+}
+
+#symbcontact {
+  color: blue;
+}
 /*CENTER END*/
 
 /*FOOTER*/
 #footer {
+  padding: 1em 0em 0em 0em;
+}
+
+#footertem {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   padding: 1em 0em 0em 0em;
 }
 
@@ -206,19 +353,25 @@ a:hover {
   text-transform: uppercase;
 }
 
+#footertem,
+#footertem a {
+  background-color: #1a3689;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 #footer a:hover {
+  color: orange;
+}
+
+#footertem a:hover {
   color: orange;
 }
 
 /*FOOTER END*/
 
 /*MEDIA QUERIES*/
-@media all and (min-width:767px) and (max-width:940px) {
-  #logotop {
-    margin-top: -25px;
-  }
-}
-
 @media all and (min-width:767px) and (max-width:1200px) {
   .push {
     height: 300px;
@@ -226,17 +379,8 @@ a:hover {
 }
 
 @media all and (max-width:767px) {
-  .navlinks {
-    background-color: white;
-  }
-
   .push {
     height: 900px;
-  }
-
-  #logotop {
-    width: 15%;
-    margin-left: 42.5%;
   }
 
   #center {
@@ -253,10 +397,55 @@ a:hover {
   }
 }
 
+@media (max-width: 970px) {
+  #logotop {
+    width: 15%;
+    margin-left: 42.5%;
+  }
+
+  ul {
+    background-color: white;
+  }
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+}
+
 @media all and (max-width:500px) {
   #logotop {
-    width: 20%;
-    margin-left: 40%;
+    width: 25%;
+    margin-left: 37.5%;
   }
 
   #center {
@@ -273,3 +462,9 @@ a:hover {
   }
 }
 /*MEDIA QUERIES END*/
+
+/*REDUCE HORIZONTAL SCROLL*/
+.container-fluid .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

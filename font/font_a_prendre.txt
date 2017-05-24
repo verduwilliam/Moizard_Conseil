@@ -1,0 +1,5 @@
+avenir roman ok
+fontin smallcaps ok
+avenir black
+avenir heavy
+avenir medium

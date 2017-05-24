@@ -5,70 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Moizard Conseil</title>
+  <title>Moizard Conseil - Prestations</title>
 
   <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/slider.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/smoothscroll.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/header.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/Chart.js"></script>
 </head>
 <body>
   <!--TOPBAR-->
-  <nav class="navbar navbar-default" id="topnavbar">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+  <nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+			</div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html" class="navlinks">Accueil</a></li>
-          <li><a href="presentation.html" class="navlinks">Présentation</a></li>
-          <li class="active"><a href="prestations.html" id="active" class="navlinks">Prestations <span class="sr-only">(current)</span></a></li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="temoignages.html" class="navlinks">Témoignages</a></li>
-          <li><a href="actu.html" class="navlinks">Actualités</a></li>
-          <li><a href="contact.html" class="navlinks">Contact</a></li>
-          <li><form action="#" class="search-form">
-            <div class="form-group has-feedback">
-              <label for="search" class="sr-only">Recherche</label>
-              <input type="text" class="form-control" name="search" id="search" placeholder="Recherche">
-              <span class="icon-search form-control-feedback"></span>
-            </div>
-          </form></li>
-        </ul>
-      </div>
-    </div>
-    <img src="img/logo_navbar.png" alt="logo Moizard Conseil" id="logotop">
-  </nav>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+        <ul class="[ nav navbar-nav navbar ]">
+					<li><a href="index.html" class="[ animate ]">Accueil</a></li>
+          <li><a href="presentation.html" class="[ animate ]">Présentation</a></li>
+          <li><a href="prestations.html" class="[ animate ]" id="active">Prestations <span class="sr-only">(current)</span></a></li>
+				</ul>
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li><a href="temoignages.html" class="[ animate ]">Témoignages</a></li>
+          <li><a href="liens.html" class="[ animate ]">Liens utiles</a></li>
+          <li><a href="contact.html" class="[ animate ]">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+    <a href="index.html"><img src="img/logo_navbar.png" alt="logo Moizard Conseil" id="logotop"></a>
+	</nav>
   <!--TOPBAR END-->
 
   <!--CENTER-->
-  <h2 id="h2prest">mes prestations</h2>
-  <hr class="hrblue">
-  <div id="centerprest">
-    <p><img src="img/prest1.png" alt="logo bilan" class="logoprest">Bilan d'orientation et de compétences</p>
-    <p><img src="img/prest2.png" alt="logo coaching" class="logoprest">Coaching</p>
-    <p><img src="img/prest3.png" alt="logo coaching cavaliers" class="logoprest">Coaching mental pour les cavaliers</p>
-    <p><img src="img/prest4.png" alt="logo equicoaching" class="logoprest">Equicoaching</p>
-    <p><img src="img/prest5.png" alt="logo conférences" class="logoprest">Conférences</p>
-    <p><img src="img/prest6.png" alt="logo cohésion d'équipe" class="logoprest">Cohésion d'équipe</p>
-    <p><img src="img/prest7.png" alt="logo formations" class="logoprest">Formations : <span class="petit">Gestion du stress, intelligence émotionelle et relationnelle, créativité</p>
-    <p><img src="img/prest8.png" alt="logo tabac" class="logoprest">Arrêt du tabac</p>
-    <p><img src="img/prest9.png" alt="logo couple/famille" class="logoprest">Accompagnement du couple et de la famille</p>
+  <div class="titreblue">
+    <h1>prestations</h1>
+  </div>
+  <div id="hautprest">
+    <h2 class="prest">particuliers</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="competences.html"><img src="img/bilan_competences.png" alt="logo bilan de compétences">bilan de compétences</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="relation.html"><img src="img/coaching_relation.png" alt="logo coaching relationnel">coaching relationnel</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="equicoaching.html"><img src="img/equicoaching.png" alt="logo équicoaching">equicoaching</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="orientation.html"><img src="img/orientation.png" alt="logo bilan d'orientation">bilan d'orientation</a></p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <p><a href="tabac.html"><img src="img/coaching_relation.png" alt="logo coaching relationnel">arrêt du tabac à l'aide de l'hypnose ericksonienne</a></p>
+        </div>
+      </div>
+    </div>
+    <h2 class="prest">entreprises</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="competences.html"><img src="img/bilan_competences.png" alt="logo bilan de compétences">bilan de compétences</a></p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><img src="img/bilan_pro.png" alt="logo coaching relationnel">bilan professionnel</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><a href="equicoaching.html"><img src="img/equicoaching.png" alt="logo équicoaching">equicoaching</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <p><img src="img/coaching_entreprise.png" alt="logo bilan d'orientation">coaching en entreprise</p>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+          <p><img src="img/formation.png" alt="logo coaching relationnel">formation "réussir vos entretiens professionnels"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="basprest">
+    <p><span style="font-weight:bold">Le bilan de compétences</span> permet de faire un point sur votre vie professionnelle, d'analyser vos compétences, vos aptitudes et vos motivations.<br>Il pourra vous aider à définir un projet professionnel cohérent ou valider un projet de formation.<br>Réalisé pendant ou en dehors du temps de travail, sa prise en charge est assurée par le Fongecif, ou autre OPCA dans la mesure où le salarié remplit les conditions d'accès.<br>Le bilan de compétences se déroule dans un organisme agréé de votre choix, qui garantit la totale confidentialité de la démarche.</p>
+    <p><span style="font-weight:bold">Le bilan d'orientation</span> permet de prendre conscience de ses centres d'intérêts, ses motivations, ses points d'appui, ses atouts de la personnalité, ses points à développer et de déterminer des pistes d'orientation : domaine professionnel, métiers, filières, choix d'études longues ou courtes.</p>
   </div>
   <!--CENTER END-->
 
@@ -93,9 +124,5 @@
     </div>
   </div>
   <!--FOOTER END-->
-
-  <script src="js/jssor.slider-22.2.16.min.js" type="text/javascript"></script>
-  <script src="js/slider.js" type="text/javascript"></script>
-  <script type="text/javascript">jssor_1_slider_init();</script>
 </body>
 </html>

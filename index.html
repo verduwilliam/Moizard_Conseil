@@ -10,51 +10,43 @@
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/slider.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/smoothscroll.js" type="text/javascript"></script>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/header.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="js/Chart.js"></script>
 </head>
 <body>
 
   <!--TOPBAR-->
-  <nav class="navbar navbar-default" id="topnavbar">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
+  <nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+			</div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html" id="active" class="navlinks">Accueil <span class="sr-only">(current)</span></a></li>
-          <li><a href="presentation.html" class="navlinks">Présentation</a></li>
-          <li><a href="prestations.html" class="navlinks">Prestations</a></li>
-        </ul>
-
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="temoignages.html" class="navlinks">Témoignages</a></li>
-          <li><a href="actu.html" class="navlinks">Actualités</a></li>
-          <li><a href="contact.html" class="navlinks">Contact</a></li>
-          <li><form action="#" class="search-form">
-            <div class="form-group has-feedback">
-              <label for="search" class="sr-only">Recherche</label>
-              <input type="text" class="form-control" name="search" id="search" placeholder="Recherche">
-              <span class="icon-search form-control-feedback"></span>
-            </div>
-          </form></li>
-        </ul>
-      </div>
-    </div>
-    <img src="img/logo_navbar.png" alt="logo Moizard Conseil" id="logotop">
-  </nav>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
+        <ul class="[ nav navbar-nav navbar ]">
+					<li><a href="index.html" class="[ animate ]" id="active">Accueil <span class="sr-only">(current)</span></a></li>
+          <li><a href="presentation.html" class="[ animate ]">Présentation</a></li>
+          <li><a href="prestations.html" class="[ animate ]">Prestations</a></li>
+				</ul>
+				<ul class="[ nav navbar-nav navbar-right ]">
+					<li><a href="temoignages.html" class="[ animate ]">Témoignages</a></li>
+          <li><a href="liens.html" class="[ animate ]">Liens utiles</a></li>
+          <li><a href="contact.html" class="[ animate ]">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+    <a href="index.html"><img src="img/logo_navbar.png" alt="logo Moizard Conseil" id="logotop"></a>
+	</nav>
   <!--TOPBAR END-->
 
   <!--SLIDER-->
@@ -65,14 +57,21 @@
         <div class="slider">
           <h1>bilan de<br>compétences</h1>
           <p><span style="color:orange">le 1er janvier 2017,</span> le bilan de<br>compétences est éligible au compte<br>personnel de formation.</p>
-          <a href="#">en savoir +</a>
+          <a href="competences.html">en savoir +</a>
         </div>
       </div>
       <div class="sliderback2">
         <div class="slider">
-          <h1>lorem ipsum</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <a href="#">en savoir +</a>
+          <h1>arrêt du tabac</h1>
+          <p> L’hypnose est reconnue parmi les techniques les plus efficaces dans les conduites addictives.</p>
+          <a href="tabac.html">en savoir +</a>
+        </div>
+      </div>
+      <div class="sliderback3">
+        <div class="slider">
+          <h1>equicoaching</h1>
+          <p>Miroirs de nos émotions et de nos comportements, Révélateur de talents</p>
+          <a href="equicoaching.html">en savoir +</a>
         </div>
       </div>
 

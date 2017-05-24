@@ -1,6 +1,60 @@
+@font-face {
+  font-family: 'fontin_smallcaps';
+  src: url('../fonts/fontin-smallcaps-webfont.woff2') format('woff2'),
+       url('../fonts/fontin-smallcaps-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "avenir_roman";
+  src: url("../fonts/avenir_roman.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "avenir_black";
+  src: url("../fonts/avenir_black.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "avenir_heavy";
+  src: url("../fonts/avenir_heavy.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "avenir_medium";
+  src: url("../fonts/avenir_medium.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0px;
   padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "fontin_smallcaps", Arial, serif;
+}
+
+nav {
+  height: 53px;
+}
+
+p,
+a,
+button,
+table,
+li {
+  font-family: "avenir_medium", sans-serif;
 }
 
 a {
@@ -9,14 +63,20 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #F19321;
 }
 
 .sliderback1 {
-  background: linear-gradient(rgba(30,71,152,0.7),rgba(30,71,152,0.7)), url(../img/slider_bg1.jpg) no-repeat center center;
+  background: url(../img/slider_bg.png) no-repeat center center;
   background-size: cover;
 }
 
 .sliderback2 {
+  background: linear-gradient(rgba(30,71,152,0.7),rgba(30,71,152,0.7)), url(../img/slider_bg3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.sliderback3 {
   background: linear-gradient(rgba(30,71,152,0.7),rgba(30,71,152,0.7)), url(../img/slider_bg2.jpg) no-repeat center center;
   background-size: cover;
 }
@@ -32,7 +92,6 @@ a:hover {
 
 .slider h1 {
   font-size: 70px;
-  font-family: serif;
   padding: 2em 0em 0em 0em;
 }
 
@@ -51,22 +110,26 @@ a:hover {
 }
 
 .slider a:hover {
-  color: orange;
-  border: 1px solid orange;
+  color: #F19321;
+  border: 1px solid #F19321;
   font-size: 12px;
-  box-shadow: 0em 0.2em orange;
+  box-shadow: 0em 0.2em #F19321;
+}
+
+#bs-example-navbar-collapse-1 {
+  background: white;
 }
 
 #active {
   background-color: white;
-  color: orange;
+  color: #F19321;
 }
 
 #logotop {
   display: inline-block;
   margin-left: 45%;
   margin-top: -60px;
-  width: 10%;
+  width: 100px;
   background-color: white;
   padding: 1em;
   border-radius: 100%;
@@ -162,7 +225,7 @@ a:hover {
 }
 
 #center a {
-  background-color: orange;
+  background-color: #F19321;
   color: white;
   text-transform: uppercase;
   padding: 0.5em;
@@ -176,45 +239,39 @@ a:hover {
 
 #photo1 {
   height: 400px;
-  background: url(../img/photo1.jpg);
+  background: url(../img/index_1.png);
   background-size: cover;
 }
 
 #photo2 {
   height: 300px;
-  background-image: url(../img/photo2.jpg);
+  background-image: url(../img/index_2.png);
   background-size: cover;
 }
 
 #photo3 {
   height: 300px;
-  background-image: url(../img/photo3.jpg);
+  background-image: url(../img/index_3.png);
   background-size: cover;
 }
 
-.hrblue {
-  width: 30px;
-  border-top: 2px solid blue;
-}
-
-.hrwhite {
-  width: 30px;
-  border-top: 2px solid white;
-}
-
-.titreorange {
+.titreblue {
+  margin-top: -55px;
+  margin-bottom: 55px;
+  height: 200px;
   width: 100%;
-  background-color: orange;
+  background: url(../img/header_bg.png) no-repeat center center;
+  background-size: cover;
 }
 
-.titreorange h1 {
-  padding: 2em 0em 0.5em 2em;
+.titreblue h1 {
+  padding: 3em 0em 0.5em 2em;
   color: white;
   text-transform: uppercase;
 }
 
-.titreorange p {
-  padding: 2em 0em 2em 2em;
+.titreblue p {
+  padding: 1em 0em 2em 2em;
   color: white;
 }
 
@@ -226,16 +283,64 @@ a:hover {
 }
 
 #trianglepres {
-  float: right;
   width: 50px;
-  margin-top: -25px;
-  margin-right: 50px;
+  margin-top: -102px;
+  margin-left: 50px;
+}
+
+#txtpres {
+  position: relative;
+  z-index: 2;
+  width: 32%;
+  margin-top: -27em;
+  float: right;
+  background-color: white;
+  padding: 5em;
+  margin-right: 15%;
+}
+
+.presg1,
+.presg2 {
+  width: 35px;
+}
+
+.presg1 {
+  float: left;
+}
+
+.presg2 {
+  float: right;
+}
+
+.txtpres2 {
+  padding: 5%;
+}
+
+#txtpres2 p {
+  width: 70%;
+  margin: 0.5em 15%;
+}
+
+#txtpres2,
+#basprest {
+  margin-top: 4em;
+  background-color: #f5f5f3;
+}
+
+#txtpres2 i {
+  color: #1a3689;
+}
+
+#imgpres {
+  position: relative;
+  z-index: 0;
+  width: 50%;
+  margin-left: 10%;
 }
 
 #trianglecontact {
-  float: left;
   width: 50px;
-  margin-top: -25px;
+  margin-top: -50px;
   margin-left: 50px;
 }
 
@@ -243,21 +348,9 @@ a:hover {
   margin: 2em 3em 0em 3em;
 }
 
-#pres figure {
-  width: 419px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#pres figcaption {
-  text-align: center;
-  color: white;
-  background-color: blue;
-}
-
 .h2pres {
   text-transform: uppercase;
-  color: blue;
+  color: #1a3689;
   text-align: center;
 }
 
@@ -269,39 +362,66 @@ a:hover {
   text-transform: uppercase;
   text-align: center;
   margin-top: 100px;
-  color: blue;
+  color: #1a3689;
 }
 
-#centerprest {
-  margin-left: 10%;
-  margin-right: 10%;
+#basprest {
+  padding: 4em;
+}
+
+.prest {
+  margin-left: 3em;
+}
+
+#hautprest img {
+  margin: 1em;
+}
+
+#hautprest p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#hautprest a {
+  color: #333333;
+}
+
+#hautprest a:hover {
+  color: #F19321;
 }
 
 .petit {
   font-size: 80%;
 }
 
-#centertem {
-  background-color: blue;
-  padding: 100px 0px 50px 0px;
-  text-transform: uppercase;
-  color: white;
+
+.btn-tem {
+  margin: 20px 0;
 }
 
-.tem1 {
-  float: left;
-  width: 40px;
+.txttem {
+  margin-left: 15%;
 }
 
-.tem2 {
-  float: right;
-  width: 40px;
+.temg1 {
+  width: 10px;
 }
 
-#h2tem {
-  color: blue;
-  text-align: center;
-  text-transform: uppercase;
+.temg2 {
+  width: 10px;
+}
+
+#tem {
+  margin: 2em 0em;
+}
+
+#tem p {
+  padding: 2em 2em;
+}
+
+#tem p:nth-child(odd) {
+  background-color: #f5f5f3;
+
 }
 
 #txtcontact {
@@ -310,8 +430,9 @@ a:hover {
 }
 
 #map {
+  height: 400px;
   width: 70%;
-  margin-left: 15%;
+  margin: 25px 15%;
 }
 
 #coordonées {
@@ -325,23 +446,33 @@ a:hover {
 }
 
 #coordonées a:hover {
-  color: orange;
+  color: #F19321;
 }
 
 #symbcontact {
-  color: blue;
+  color: #1a3689;
 }
+
+table {
+  margin: 2em 0em;
+}
+
+td {
+  padding: 1em 2em;
+}
+
+tr:nth-child(odd) {
+  background-color: #f5f5f3;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
 /*CENTER END*/
 
 /*FOOTER*/
 #footer {
-  padding: 1em 0em 0em 0em;
-}
-
-#footertem {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 1em 0em 0em 0em;
 }
 
@@ -353,20 +484,8 @@ a:hover {
   text-transform: uppercase;
 }
 
-#footertem,
-#footertem a {
-  background-color: #1a3689;
-  color: white;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 #footer a:hover {
-  color: orange;
-}
-
-#footertem a:hover {
-  color: orange;
+  color: #F19321;
 }
 
 /*FOOTER END*/
@@ -378,15 +497,32 @@ a:hover {
   }
 }
 
+
+@media all and (max-width:1270px) {
+  #txtpres {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0%;
+    float: none;
+    padding: 5em;
+  }
+  #imgpres {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+
 @media all and (max-width:767px) {
   .push {
     height: 900px;
   }
-
   #center {
     height: 900px;
   }
-
   #txtcenter1,
   #txtcenter2,
   #txtcenter3,
@@ -397,12 +533,12 @@ a:hover {
   }
 }
 
-@media (max-width: 970px) {
+
+@media (max-width: 991px) {
   #logotop {
     width: 15%;
     margin-left: 42.5%;
   }
-
   ul {
     background-color: white;
   }
@@ -442,17 +578,15 @@ a:hover {
   }
 }
 
+
 @media all and (max-width:500px) {
   #logotop {
     width: 25%;
     margin-left: 37.5%;
   }
-
-  #center {
-    height: 750px;
+  #txtcenter1 {
+    height: 400px;
   }
-
-  #txtcenter1,
   #txtcenter2,
   #txtcenter3,
   #photo1,

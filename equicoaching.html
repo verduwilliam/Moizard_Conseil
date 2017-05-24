@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Moizard Conseil - Présentation</title>
+  <title>Moizard Conseil</title>
 
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -14,8 +14,10 @@
   <script src="js/jquery.min.js" type="text/javascript"></script>
   <script src="js/header.js" type="text/javascript"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/equi.js" type="text/javascript"></script>
 </head>
 <body>
+
   <!--TOPBAR-->
   <nav class="[ navbar ][ navbar-bootsnipp animate ]" role="navigation">
     	<div class="[ container ]">
@@ -33,7 +35,7 @@
 			<div class="[ collapse navbar-collapse ]" id="bs-example-navbar-collapse-1">
         <ul class="[ nav navbar-nav navbar ]">
 					<li><a href="index.html" class="[ animate ]">Accueil</a></li>
-          <li><a href="presentation.html" class="[ animate ]" id="active">Présentation <span class="sr-only">(current)</span></a></li>
+          <li><a href="presentation.html" class="[ animate ]">Présentation</a></li>
           <li><a href="prestations.html" class="[ animate ]">Prestations</a></li>
 				</ul>
 				<ul class="[ nav navbar-nav navbar-right ]">
@@ -49,37 +51,18 @@
 
   <!--CENTER-->
   <div class="titreblue">
-    <h1>présentation</h1>
+    <h1>equicoaching</h1>
   </div>
-  <img src="img/triangle.png" alt="triangle" id="trianglepres">
-  <div id="pres">
-    <img id="imgpres" src="img/photo_presentation.png" alt="Violaine Moizard">
-    <div id="txtpres">
-      <p><img src="img/tem1.png" alt="guillemets" class="presg1">Formée en psychologie et techniques thérapeutiques, j'ai grandi avec les chevaux qui m'ont tant appris sur l'humilité, la présence, la confiance, le sens de l'engagement.</p>
-      <p>Aujourd'hui, c'est avec enthousiasme que je me met au service des personnes que j'accompagne mes expériences et mes expertises.<img src="img/tem2.png" alt="guillemets" class="presg2"></p>
-    </div>
-  </div>
-  <div class="container-fluid" id="txtpres2">
+
+  <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-6 txtpres2">
-        <p><i class="icon-play-sign"></i> Une formation en psychologie et en relations humaines.</p>
-        <p><i class="icon-play-sign"></i> Approche centrée sur le projet de vie.</p>
-        <p><i class="icon-play-sign"></i> Certifiée Maître Praticienne en PNL.</p>
-        <p><i class="icon-play-sign"></i> Certifiée en hypnose ericksonienne.</p>
-        <p><i class="icon-play-sign"></i> Certifiée en thérapie systémique brève.</p>
-        <p><i class="icon-play-sign"></i> Certifiée en HTSMA.</p>
-        <p><i class="icon-play-sign"></i> Certifiée en EMDR.</p>
-        <p><i class="icon-play-sign"></i> Sensibilité à l'analyse transactionnelle, la CNV et la Gestalt.</p>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 txtpres2">
-        <p><i class="icon-play-sign"></i> Comportementaliste équin, méthode basée sur l'éthologie.</p>
-        <p><i class="icon-play-sign"></i> Analyse systémique des organisations.</p>
-        <p><i class="icon-play-sign"></i> 13 années d'expériences dans le secteur de l'accompagnement.</p>
-        <p><i class="icon-play-sign"></i> Formatrice au CUEEP Lille 1 dans le cadre du DUCERH (Diplôme Universitaire de Compétences En Relations Humaines).</p>
-        <p><i class="icon-play-sign"></i> Formatrice à la méthodologie de bilan de compétences.</p>
-        <p><i class="icon-play-sign"></i> Lille 1 Département Relations humaines et Communication.</p>
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <button class="btn btn-warning btn-tem" id="generalbutton">Présentation générale</button>
+        <button class="btn btn-warning btn-tem" id="partbutton">Prestation pour les Particuliers</button>
+        <button class="btn btn-warning btn-tem" id="probutton">	Prestation pour les Entreprises</button>
       </div>
     </div>
+    <div id="equi"></div>
   </div>
   <!--CENTER END-->
 
